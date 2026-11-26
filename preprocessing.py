@@ -31,7 +31,7 @@ def clean_players(df):
 
 
 if __name__ == "__main__":
-    from database import get_all_players
-    raw = get_all_players()
+    from database import PlayerDatabase
+    raw = PlayerDatabase().get_all_players()
     cleaned = clean_players(raw)
     print(f"Raw: {len(raw)}, Cleaned: {len(cleaned)}")
