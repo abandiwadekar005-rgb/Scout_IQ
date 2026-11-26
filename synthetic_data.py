@@ -42,4 +42,16 @@ players = [
      "tackles_p90": 2.3, "interceptions_p90": 2.0, "clearances_p90": 6.7, "aerial_win_pct": 76.0, "prog_passes_p90": 1.8},
     {"name": "Stopper C", "position_group": "CB", "age": 32, "minutes_played": 2500, "market_value": 12_000_000,
      "tackles_p90": 2.6, "interceptions_p90": 2.3, "clearances_p90": 7.3, "aerial_win_pct": 79.0, "prog_passes_p90": 2.2},
+
+     #first one: this tests whether the algorithms I will code will exclude this dataset where the no of minutes played is much lower, clearing out the anomolous value
+     {"name": "Low Minutes Player", "position_group": "ST", "age": 20, "minutes_played": 50, "market_value": 5_000_000,
+     "npxg_p90": 0.90, "shots_p90": 5.0, "touches_box_p90": 8.0, "goals_p90": 1.00, "sca_p90": 2.0},
+
+     #2nd one: this tests whether if a data is null, does it properly exclude it.
+    {"name": "Null Stat Player", "position_group": "CM", "age": 25, "minutes_played": 2000, "market_value": 10_000_000,
+     "prog_passes_p90": None, "passes_final_third_p90": 3.0, "tackles_int_p90": 3.0, "pass_completion_pct": 85.0, "touches_p90": 60.0},
+
+     #3rd one: this tests for if a data within a player is negative, it should exclude it
+    {"name": "Negative Stat Player", "position_group": "CB", "age": 27, "minutes_played": 2000, "market_value": 10_000_000,
+     "tackles_p90": -1.0, "interceptions_p90": 2.0, "clearances_p90": 4.0, "aerial_win_pct": 60.0, "prog_passes_p90": 3.0},
 ]
