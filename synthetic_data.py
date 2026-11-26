@@ -29,5 +29,17 @@ players = [
     {"name": "Destroyer C", "position_group": "CM", "age": 29, "minutes_played": 2600, "market_value": 15_000_000,
      "prog_passes_p90": 3.2, "passes_final_third_p90": 2.0, "tackles_int_p90": 6.8, "pass_completion_pct": 83.0, "touches_p90": 58.0},
 
-
+    #coding the defenders part of the synthetic database
+    {"name": "Sweeper A", "position_group": "CB", "age": 28, "minutes_played": 2800, "market_value": 50_000_000,
+     "tackles_p90": 1.5, "interceptions_p90": 1.8, "clearances_p90": 3.0, "aerial_win_pct": 65.0, "prog_passes_p90": 6.5},
+    {"name": "Sweeper B", "position_group": "CB", "age": 25, "minutes_played": 2500, "market_value": 20_000_000,
+     "tackles_p90": 1.4, "interceptions_p90": 1.7, "clearances_p90": 2.8, "aerial_win_pct": 63.0, "prog_passes_p90": 6.2},
+    {"name": "Sweeper C", "position_group": "CB", "age": 31, "minutes_played": 2600, "market_value": 28_000_000,
+     "tackles_p90": 1.6, "interceptions_p90": 1.9, "clearances_p90": 3.2, "aerial_win_pct": 66.0, "prog_passes_p90": 6.8},
+    {"name": "Stopper A", "position_group": "CB", "age": 30, "minutes_played": 2700, "market_value": 22_000_000,
+     "tackles_p90": 2.5, "interceptions_p90": 2.2, "clearances_p90": 7.0, "aerial_win_pct": 78.0, "prog_passes_p90": 2.0},
+    {"name": "Stopper B", "position_group": "CB", "age": 26, "minutes_played": 2400, "market_value": 8_000_000,
+     "tackles_p90": 2.3, "interceptions_p90": 2.0, "clearances_p90": 6.7, "aerial_win_pct": 76.0, "prog_passes_p90": 1.8},
+    {"name": "Stopper C", "position_group": "CB", "age": 32, "minutes_played": 2500, "market_value": 12_000_000,
+     "tackles_p90": 2.6, "interceptions_p90": 2.3, "clearances_p90": 7.3, "aerial_win_pct": 79.0, "prog_passes_p90": 2.2},
 ]
