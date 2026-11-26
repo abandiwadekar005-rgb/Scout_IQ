@@ -55,3 +55,7 @@ players = [
     {"name": "Negative Stat Player", "position_group": "CB", "age": 27, "minutes_played": 2000, "market_value": 10_000_000,
      "tackles_p90": -1.0, "interceptions_p90": 2.0, "clearances_p90": 4.0, "aerial_win_pct": 60.0, "prog_passes_p90": 3.0},
 ]
+
+df = pd.DataFrame(players)
+df.insert(0, "player_id", range(1, len(df) + 1))
+df["league"] = "Test League"
