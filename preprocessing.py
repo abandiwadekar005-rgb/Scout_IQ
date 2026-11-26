@@ -26,6 +26,10 @@ def clean_players(df):
             keep_mask &= ~null_here
             neg_here = pos_rows & (df[col] < 0)
             keep_mask &= ~neg_here
+            # percentages above 100 are impossible, so remove them
+            if col.endswith("_pct"):
+                over_100 = pos_rows & (df[col] > 100)
+                keep_mask &= ~over_100
 
     return df[keep_mask].reset_index(drop=True)
 
