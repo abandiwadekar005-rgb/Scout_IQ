@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 players = [
     # the attackers section of the synthetic database
@@ -56,6 +57,13 @@ players = [
      "tackles_p90": -1.0, "interceptions_p90": 2.0, "clearances_p90": 4.0, "aerial_win_pct": 60.0, "prog_passes_p90": 3.0},
 ]
 
+# converts players dictionary into a proper dataset which we can use
 df = pd.DataFrame(players)
 df.insert(0, "player_id", range(1, len(df) + 1))
 df["league"] = "Test League"
+
+# create the data folder if it's missing
+os.makedirs("data", exist_ok=True)
+# relative path, works on any computer
+df.to_csv("data/synthetic_players.csv", index=False)      
+print(f"Wrote {len(df)} players to data/synthetic_players.csv")
