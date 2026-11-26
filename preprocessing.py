@@ -1,5 +1,13 @@
 import pandas as pd
-from database import STAT_COLUMNS
+
+STAT_COLUMNS = {
+    "ST": ["npxg_p90", "shots_p90", "touches_box_p90", "goals_p90", "sca_p90"],
+    "CM": ["prog_passes_p90", "passes_final_third_p90", "tackles_int_p90",
+           "pass_completion_pct", "touches_p90"],
+    "CB": ["tackles_p90", "interceptions_p90", "clearances_p90",
+           "aerial_win_pct", "prog_passes_p90"],
+}
+
 
 # minimum minutes the player must play to process its data within the algorithm
 MIN_MINUTES_THRESHOLD = 450
