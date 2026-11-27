@@ -56,4 +56,5 @@ if __name__ == "__main__":
     cleaned = clean_players(raw)
     print(f"Raw: {len(raw)}, Cleaned: {len(cleaned)}")
 
-    
+    scaled = scale_by_position(cleaned)
+    print(scaled["ST"][0].round(2))
